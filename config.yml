@@ -1,0 +1,18 @@
+
+backend:
+  name: github
+  repo: adriahz/pvd
+  branch: main
+
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  - name: "serveis"
+    label: "Serveis"
+    folder: "serveis"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Títol", name: "title", widget: "string" }
+      - { label: "Contingut", name: "body", widget: "markdown" }
